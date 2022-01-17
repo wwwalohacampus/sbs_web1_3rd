@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 요소 - 레이아웃</title>
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            font-family:  'Noto Sans KR', sans-serif;
+        }
+
+        header {
+            background-color: lightgray;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            height: 300px;
+            background-color: #339999;
+            padding: 20px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        footer {
+            background-color: #ffcc00;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        /* 반응형 적용 - 가로사이즈 600px 이하 */
+        @media screen and (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>semantic 요소를 이용한 레이아웃</h1>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">menu 001</a></li>
+                <li><a href="#">menu 002</a></li>
+                <li><a href="#">menu 003</a></li>
+                <li><a href="#">menu 004</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>SBS 아카데미</h1>
+            <p>
+                가장 청춘은 산야에 때에, 싹이 것이다. 목숨이 얼마나 지혜는 소금이라 가슴에 황금시대를 청춘의 사람은 아름다우냐? 청춘 가는 있으며, 타오르고 피에 이것이다. 아름답고 위하여, 창공에 무엇이 운다. 이성은 그들은 영원히 있는 아름답고 보내는 황금시대다.
+            </p>
+            <p>
+                가장 청춘은 산야에 때에, 싹이 것이다. 목숨이 얼마나 지혜는 소금이라 가슴에 황금시대를 청춘의 사람은 아름다우냐? 청춘 가는 있으며, 타오르고 피에 이것이다. 아름답고 위하여, 창공에 무엇이 운다. 이성은 그들은 영원히 있는 아름답고 보내는 황금시대다.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+    
+</body>
+</html>
