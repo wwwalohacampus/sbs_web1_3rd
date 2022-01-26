@@ -1,0 +1,34 @@
+
+* { margin: 0; padding: 0; text-align: center; }
+
+.box {
+    height: 200px;
+    margin: 50px;
+}
+
+.bottom { /* 여기에 작성해보세요:) */ }
+.top { /* 여기에 작성해보세요:) */ }
+.left { /* 여기에 작성해보세요:) */ }
+.right { /* 여기에 작성해보세요:) */ }
+
+.instar {
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.top-left { 
+    /* 여기에 작성해보세요:) */
+}
+
+.top-right {
+    /* 여기에 작성해보세요:) */
+}
+
+.bottom-left {
+    /* 여기에 작성해보세요:) */
+}
+
+.bottom-right {
+    /* 여기에 작성해보세요:) */
+}

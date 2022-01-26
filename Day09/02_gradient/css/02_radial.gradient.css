@@ -1,0 +1,50 @@
+* { margin: 0; padding: 0; text-align: center; }
+
+.box {
+    width: 900px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+/* 모양 */
+.ellipse { 
+    /* 여기에 작성해보세요:) */
+}
+.circle { 
+    /* 여기에 작성해보세요:) */
+}
+
+/* 사이즈 */
+.closest-corner {
+    /* 여기에 작성해보세요:) */
+}
+.closest-side {
+    /* 여기에 작성해보세요:) */
+}
+
+.farthest-corner {
+    /* 여기에 작성해보세요:) */
+}
+.farthest-side {
+    /* 여기에 작성해보세요:) */
+}
+
+
+/* 누적 그레디언트 */
+.stacked-radial {
+    background:
+        radial-gradient(circle at 50% 0, rgba(255,0,0, 0.5), rgba(255,0,0,0) 70.71%),
+        radial-gradient(circle at 6.7% 75%, rgba(0,0,255, 0.5), rgba(0,0,255,0) 70.71%),
+        radial-gradient(circle at 93.3% 75%, rgba(0,255,0, 0.5), rgba(0,255,0,0) 70.71%)
+}
+
+
+
+
+
+
+
+
+
+
+
