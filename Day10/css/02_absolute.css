@@ -19,7 +19,8 @@
 }
 
 .container .absolute {
-    /* 여기에 작성해보세요:) */
+    position: absolute;
+    border: 3px solid black;
 }
 
 /* 초기위치 */

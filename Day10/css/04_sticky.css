@@ -19,7 +19,8 @@
 }
 
 .container .sticky {
-    /* 여기에 작성해보세요:) */
+    position: sticky;
+    border: 3px solid black;
 }
 
 /* 초기위치 */

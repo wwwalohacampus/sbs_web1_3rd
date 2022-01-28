@@ -19,7 +19,8 @@
 }
 
 .container .fixed {
-   /* 여기에 작성해보세요:) */
+   position: fixed;
+   border: 3px solid black;
 }
 
 /* 초기위치 */

@@ -7,18 +7,27 @@
 }
 
 .simple {
-    /* 여기에 작성해보세요:) */
+    background-image: 
+        conic-gradient(red, yellow, green, blue, black);
 }
 .degree {
-   /* 여기에 작성해보세요:) */
+    background-image: 
+        conic-gradient(red 45deg, yellow 90deg, green 210deg);
 }
 .pie {
-    /* 여기에 작성해보세요:) */
+    background-image: 
+        conic-gradient( red 0deg, red 90deg,
+                        yellow 90deg, yellow 180deg,
+                        green 180deg, green 270deg,
+                        blue 270deg
+                        );
+    border-radius: 50%;
 }
 .pie2 {
-    /* 여기에 작성해보세요:) */
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
 }
 
 .position {
-   /* 여기에 작성해보세요:) */
+    background-image: conic-gradient(at 70% 75%, red, yellow, green);
 }

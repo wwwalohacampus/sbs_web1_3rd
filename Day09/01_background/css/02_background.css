@@ -97,10 +97,13 @@
     background-position: bottom center;  /* 수직 수평 */
 }
 
-/* 이어서 작성해보겠습니다. */
-
 body {
     /* 여기에 작성해보세요:) */
+    background-image: url(../img/aloha.png);
+    background-size: 200px 190px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .mint {
@@ -117,7 +120,10 @@ body {
 
 */
 .classroom {
-    /* 여기에 작성해보세요:) */
+    background-image: url(../img/aloha.png), url(../img/classroom.jpg);
+    background-size: contain, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, center;
 }
 
 /* 
@@ -132,6 +138,8 @@ body {
 */
 
 .short {
-    /* 여기에 작성해보세요:) */ 
-    
+    /* image, repeat, attachment, position */
+    background: url(../img/aloha.png) no-repeat scroll left bottom,
+                url(../img/classroom.jpg) no-repeat scroll center center;
+    background-size: contain, cover;
 }
