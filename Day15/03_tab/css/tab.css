@@ -1,0 +1,63 @@
+
+.container {
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px dashed orange;
+}
+
+.tab-box {
+    padding-bottom: 40px;
+    width: 600px;
+    background-color: white;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* label - (탭) */
+.tab-item {
+    width: calc(100% / 3);
+    height: 50px;
+    border-bottom: 1px solid #333;
+    background-color: #f8f8f8;
+    line-height: 50px;
+    font-size: 20px;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.tab-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* radio 버튼 출력되지 않게 */
+input[type='radio'] { display: none; }
+
+/* 내용 영역 */
+.tab-content {
+    padding: 40px;
+    clear: both;
+    overflow: hidden;
+    display: none;
+    text-align: center;
+}
+
+/* 
+    1번 label 태그를 클릭
+    -> 1번 라디오 버튼 체크(checked)
+    -> 형제자매 요소인, 1번 내용영역 (출력)
+*/
+#tab1:checked ~ #tab1-content,
+#tab2:checked ~ #tab2-content,
+#tab3:checked ~ #tab3-content {
+    display: block;
+}
+
+.tab-box input:checked + label {
+    background-color: #333;
+    color: white;
+}

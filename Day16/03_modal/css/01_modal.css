@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#modal1 {
+    /* 여기에 작성해보세요:) */
+    position: absolute;
+    top: 176px;
+    left: 60px;
+    border: 1px solid black;
+}
+
+#modal2 {
+    /* 여기에 작성해보세요:) */
+    position: absolute;
+    top: 176px;
+    left: 480px;
+    border: 1px solid black;
+}
+
+.modal-content {
+    width: 400px;
+    height: 500px;
+}
+
+.modal-footer {
+    position: relative;
+    padding: 0 3px 4px;     /* top [left,right] bottom */
+    color: #fff;
+    background-color: #070a13;
+}
+
+.modal-footer a {
+    color: #fff;
+    float: right;
+}
+
+.modal-footer::after {
+    display: block;
+    content: '';
+    clear: both;
+}

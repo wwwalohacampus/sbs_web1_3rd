@@ -1,0 +1,48 @@
+* { margin: 0; padding: 0; }
+.container {
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px dashed orange;
+}
+
+ul { list-style-type: none; }
+ul li a { text-decoration: none; color: black; }
+
+header nav { float: left; height: 50px; text-align: center; }
+header nav .mainmenu { width: 600px; line-height: 60px; }
+/* 1차 메뉴 */
+header nav .mainmenu > li { 
+    width: 25%; float: left; height: 100%;
+    color: black; transition: all 0.4s;
+}
+
+header nav .mainmenu > li:hover { background-color: royalblue;}
+header nav .mainmenu > li:hover > a { color: white; }
+
+/* 2차 메뉴(서브 메뉴) */
+header nav .submenu { display: none; }
+/* 메인 메뉴에 마우스 올렸을 때, 모든 서브메뉴가 보여짐 */
+header nav .mainmenu:hover .submenu { display: block; }
+header nav .submenu li { 
+    background-color: #ddd;  transition: all 0.4s;
+}
+header nav .submenu li a { color: black; }
+header nav .submenu li:hover { background-color: cornflowerblue; }
+header nav .submenu li:hover a { color: white; }
+
+/* 서브메뉴 백그라운드 */
+header nav .subback {
+    display: none;
+    width: 1200px;
+    height: 240px;
+    margin-top: 60px;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+/* 메인 메뉴에 마우스 올렸을 때, */
+header nav .mainmenu:hover ~ .subback { display: block; }
+
+/* 서브 백그라운드 여백에 마우스 올렸을 때, */
+header nav .subback:hover { display: block; }

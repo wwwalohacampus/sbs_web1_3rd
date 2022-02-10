@@ -1,0 +1,40 @@
+
+* { margin: 0; padding: 0; }
+
+.sidebar {
+    /* 여기에 작성해보세요:) */
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sidebar a {
+    /* 여기에 작성해보세요:) */
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: royalblue;
+    color: white;
+}
+
+/* :not(선택자) - 가상선택자
+    - '선택자'를 제외하고 선택
+ */
+.sidebar a:hover:not(.active) {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+.content {
+    margin-left: 200px;
+    padding: 10px 20px;
+    height: 1000px;
+}
